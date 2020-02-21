@@ -1,5 +1,7 @@
 FROM archlinux:latest
 
+LABEL maintainer="Dang Mai <contact at dangmai dot net>"
+
 RUN pacman --noconfirm -Syu base-devel \
   && rm -rf /var/cache/pacman/pkg/*
 RUN useradd builduser -m \
