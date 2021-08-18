@@ -3,6 +3,7 @@ name: Weekly releases
 on:
   repository_dispatch:
     types: manual-archlinux-devel-trigger
+  workflow_dispatch:
   schedule:
     - cron: '0 1 * * */7'
 
